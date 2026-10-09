@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador Dinámico - Proyecto Final</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        #valor {
+            font-size: 4rem;
+            margin: 20px 0;
+            font-weight: bold;
+            color: #0f172a;
+        }
+        button {
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            transition: background 0.2s;
+        }
+        #btn-incrementar { background-color: #16a34a; }
+        #btn-restar { background-color: #dc2626; }
+        button:hover { opacity: 0.9; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Contador Dinámico</h1>
+        <p id="valor">0</p>
+        <div>
+            <button id="btn-restar">Restar -1</button>
+            <button id="btn-incrementar">Sumar +1</button>
+        </div>
+    </div>
+
+    
+    <script src="app.js"></script>
+</body>
+</html>
